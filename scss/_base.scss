@@ -1,0 +1,249 @@
+h1, h2, h3, h4{
+    font-family: $heading-font;
+    font-weight: 700;
+  }
+
+
+h1{
+  @include back-img('../img/bg-photo.jpg');
+  text-align: center;
+  color: $dark-teal;
+  padding-top: 20%;
+  font-size: 250%;
+}
+
+
+.name{
+  font-size: 90%;
+}
+
+body{
+    a:hover{
+    color: $dark-teal;
+  }
+  font-size: 110%;
+  background-color: $light-tan;
+  
+    .container{
+      @include container(100%);
+    }//.container
+  .projects{
+    color: $gray;
+    padding: 3%;
+    @include span(8);
+    h2{
+      text-align: center;
+      color: $dark-teal;
+    }
+    ul{
+      font-family: $sans-font;
+      list-style: none;
+      a{
+            color: $gray;
+            font-weight: 700;
+            text-decoration: none;
+          }//a
+          a:visited{
+            color: $gray;
+          }
+      li{
+        h3{
+            color: $dark-teal;
+          }
+          @include gallery(4);
+          @include clearfixed;
+          padding: 2%;
+      }//li
+    }//ul
+  }//.projects
+  aside{
+    color: $light-tan;
+    padding: 3%;
+    @include span(4);
+    background-color: $light-teal;
+    padding-bottom:1200px;
+    ul{
+      font-family: $sans-font;
+      list-style: none;
+      a{
+            color: $light-tan;
+            font-weight: 700;
+            text-decoration: none;
+          }//a
+          a:visited{
+            color: $light-tan;
+          }
+      li{
+      }
+    }//ul
+  }//aside
+}
+
+
+@include susy-breakpoint($medium){
+  h1, h2, h3, h4{
+    font-family: $heading-font;
+    font-weight: 700;
+  }
+
+
+h1{
+  @include back-img('../img/bg-photo.jpg');
+  text-align: center;
+  color: $dark-teal;
+  padding-top: 40%;
+  font-size: 250%;
+}
+
+
+.name{
+  font-size: 90%;
+}
+
+body{
+    a:hover{
+    color: $dark-teal;
+  }
+  font-size: 110%;
+  background-color: $light-tan;
+  
+    .container{
+      @include container(100%);
+    }//.container
+  .projects{
+    color: $gray;
+    padding: 3%;
+    @include span(8);
+    h2{
+      text-align: center;
+      color: $dark-teal;
+    }
+    ul{
+      font-family: $sans-font;
+      list-style: none;
+      a{
+            color: $gray;
+            font-weight: 700;
+            text-decoration: none;
+          }//a
+          a:visited{
+            color: $gray;
+          }
+      li{
+          h3{
+            color: $dark-teal;
+          }
+          @include gallery(8);
+          @include clearfixed;
+          padding: 2%;
+      }//li
+    }//ul
+  }//.projects
+  aside{
+    color: $light-tan;
+    padding: 3%;
+    @include span(4);
+    background-color: $light-teal;
+    padding-bottom:2300px;
+    ul{
+      font-family: $sans-font;
+      list-style: none;
+      a{
+            color: $light-tan;
+            font-weight: 700;
+            text-decoration: none;
+          }//a
+          a:visited{
+            color: $light-tan;
+          }
+      li{
+      }
+    }//ul
+  }//aside
+}
+
+}//medium
+
+@include susy-breakpoint($small){
+  h1, h2, h3, h4{
+    font-family: $heading-font;
+    font-weight: 700;
+  }
+
+
+h1{
+  @include back-img('../img/bg-photo.jpg');
+  text-align: center;
+  color: $dark-teal;
+  padding-top: 50%;
+  font-size: 250%;
+}
+
+
+.name{
+  font-size: 90%;
+}
+
+body{
+    a:hover{
+    color: $dark-teal;
+  }
+  font-size: 110%;
+  background-color: $light-tan;
+  
+    .container{
+      @include container(100%);
+    }//.container
+  .projects{
+    color: $gray;
+    padding: 3%;
+    @include span(11);
+    h2{
+      text-align: center;
+    }
+    ul{
+      font-family: $sans-font;
+      list-style: none;
+      a{
+            color: $gray;
+            font-weight: 700;
+            text-decoration: none;
+          }//a
+          a:visited{
+            color: $gray;
+          }
+      li{
+        h3{
+            color: $dark-teal;
+          }
+          @include gallery(11);
+          @include clearfixed;
+          padding: 2%;
+      }//li
+    }//ul
+  }//.projects
+  aside{
+    color: $light-tan;
+    padding: 3%;
+    @include span(12);
+    background-color: $light-teal;
+    padding-bottom:50px;
+    ul{
+      font-family: $sans-font;
+      list-style: none;
+      a{
+            color: $light-tan;
+            font-weight: 700;
+            text-decoration: none;
+          }//a
+          a:visited{
+            color: $light-tan;
+          }
+      li{
+      }
+    }//ul
+  }//aside
+}
+
+ 
+} //small

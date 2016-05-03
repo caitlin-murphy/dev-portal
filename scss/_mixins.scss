@@ -1,0 +1,18 @@
+@mixin back-img($bg-img, $height: 100vh){
+	background: linear-gradient(to bottom, 
+	rgba(241 ,239, 216, 0),
+	rgba(241 ,239, 216, 0.8)),
+	url($bg-img) no-repeat center center fixed; 
+ 	background-size: cover;
+	height: $height;
+  	top: 0;
+  	left: 0;
+}
+
+@mixin clearfixed(){ //mixin
+	&:after{
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
